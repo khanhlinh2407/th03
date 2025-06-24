@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bảng Thời Khoá Biểu</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        
+        body,
+        html {
+            height: 100%;
+            background-color: #c4e9ff;
+            padding: 20px;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: 150px repeat(6, 1fr);
+            /* 1 cột cho thời gian, 6 cột cho các ngày trong tuần */
+            gap: 10px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .container div {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #fff3ae;
+            border-radius: 5px;
+            background-color: #ff9cc5;
+        }
+        
+        .header {
+            font-weight: bold;
+            background-color: #a7b3c0;
+            color: white;
+        }
+        
+        .time-column {
+            background-color: #f0f4f8;
+            font-weight: bold;
+        }
+        
+        .class {
+            background-color: #f9f9f9;
+            color: #333;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .class:hover {
+            background-color: #e2e6ea;
+            cursor: pointer;
+        }
+        
+        .container .class-empty {
+            background-color: #eec9ff;
+            color: #ffcdec;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 100px repeat(6, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">Tiết</div>
+        <div class="header">Thứ 2</div>
+        <div class="header">Thứ 3</div>
+        <div class="header">Thứ 4</div>
+        <div class="header">Thứ 5</div>
+        <div class="header">Thứ 6</div>
+        <div class="header">Thứ 7</div>
+
+
+        <div class="time-column">1</div>
+        <div class="class">Toán</div>
+        <div class="class-empty"></div>
+        <div class="class">Vật Lý</div>
+        <div class="class">Tiếng Anh</div>
+        <div class="class-empty"></div>
+        <div class="class">Ngữ Văn</div>
+
+        <div class="time-column">2</div>
+        <div class="class">Lịch Sử</div>
+        <div class="class">Hóa Học</div>
+        <div class="class-empty"></div>
+        <div class="class">Tiếng Anh</div>
+        <div class="class-empty"></div>
+        <div class="class">Thể Dục</div>
+
+        <div class="time-column">3</div>
+        <div class="class">Triết Học</div>
+        <div class="class-empty"></div>
+        <div class="class">Văn Học</div>
+        <div class="class-empty"></div>
+        <div class="class">Kinh Tế</div>
+        <div class="class">Lịch Sử</div>
+
+        <div class="time-column">4</div>
+        <div class="class">Toán</div>
+        <div class="class-empty"></div>
+        <div class="class-empty"></div>
+        <div class="class">Hóa Học</div>
+        <div class="class">Vật Lý</div>
+        <div class="class">Âm Nhạc</div>
+
+    </div>
+</body>
+
+</html>
