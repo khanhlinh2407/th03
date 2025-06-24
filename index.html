@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giới thiệu Bản Thân - Nguyễn Văn A</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        
+        body,
+        html {
+            height: 100%;
+            background-color: #f0f2f5;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding: 20px;
+        }
+        
+        .profile {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            width: 100%;
+            gap: 30px;
+        }
+        
+        .avatar {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #ddd;
+        }
+        
+        .info {
+            flex: 1;
+        }
+        
+        .info h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .info p {
+            margin-bottom: 10px;
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .info h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .skills {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        
+        .contact-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .contact-btn:hover {
+            background-color: #0056b3;
+        }
+        
+        @media (max-width: 768px) {
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+            .info {
+                margin-top: 20px;
+            }
+            .skills {
+                text-align: left;
+                margin: 0 auto 20px;
+                padding-left: 20px;
+                display: inline-block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="https://i.redd.it/k5v48axtppqc1.jpeg" alt="Ảnh đại diện" class="avatar" />
+            <div class="info">
+                <h1>Nguyễn Khánh Linh</h1>
+                <p><strong>Vị trí:</strong> Huấn luyện viên Taekwondo & Nghệ sĩ Piano</p>
+                <p>Tôi đam mê võ thuật và âm nhạc. Với nhiều năm kinh nghiệm trong việc huấn luyện Taekwondo chuyên nghiệp cũng như biểu diễn và giảng dạy Piano, tôi luôn mong muốn truyền cảm hứng và kiến thức đến mọi người.</p>
+
+                <h3>Kỹ năng</h3>
+                <ul class="skills">
+                    <li>Huấn luyện Taekwondo</li>
+                    <li>Biểu diễn & Giảng dạy Piano cổ điển</li>
+                    <li>Kỹ năng sân khấu, quản lý lớp học</li>
+                </ul>
+
+                <a href="mailto:linhka2407@gmail.com" class="contact-btn">Liên hệ qua Email</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
