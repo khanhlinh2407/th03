@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liên Kết Điều Hướng</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        
+        body {
+            background-color: #ffd0e7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            background-color: #690202;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        
+        .navbar a {
+            color: rgb(255, 224, 224);
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            position: relative;
+            padding: 10px 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .navbar a::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 3px;
+            background-color: #ff1919;
+            transition: width 0.3s ease, left 0.3s ease;
+            transform: translateX(-50%);
+        }
+        
+        .navbar a:hover {
+            color: #ff0000;
+        }
+        
+        .navbar a:hover::after {
+            width: 100%;
+            left: 0;
+        }
+        /* Responsive */
+        
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#home">Trang Chủ</a>
+        <a href="#about">Giới Thiệu</a>
+        <a href="#services">Dịch Vụ</a>
+        <a href="#contact">Liên Hệ</a>
+    </nav>
+</body>
+
+</html>
